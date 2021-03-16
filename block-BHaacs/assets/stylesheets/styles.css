@@ -61,13 +61,13 @@ body{
 .container{
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem 5rem;
+    padding: 2rem 10rem;
 }
 .container1{
     max-width: 1400px;
     margin: 0 auto;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -124,6 +124,9 @@ header{
     text-decoration: none;
     color: white;
     font-weight: 400;
+}
+.features{
+    color: white;
 }
 .hero{
     text-align: center;
@@ -476,18 +479,24 @@ h5::before {
         margin: 0.7rem 0;
         
     }
+    header{
+        background-color: var(--primary);
+        z-index: -999;
+    }
     .navbar{
         display: flex;
         flex-direction: column;
+        
     }
     .navbar a{
         color: white;
+        
     }
     .header-logo{
         position: fixed;
         left: 2rem;
         top: 1rem;
-        z-index: 99;
+        z-index: 97;
     }
     label{
         display: flex;
@@ -523,7 +532,7 @@ h5::before {
         flex: 0 1 100%;
     }
     .graph img{
-        width: 50%;
+        width: 100%;
     }
     .pdf{
         margin-bottom: 1rem;
@@ -546,6 +555,13 @@ only screen and (max-width: 768px) {
     position: absolute;
     top: -9999px;
     left: -9999px;
+  }
+  .container{
+      padding: 2rem 2rem;
+  }
+  .container1{
+      margin: 2rem 2rem;
+      z-index: 99;
   }
   tr { border: 1px solid #ccc; }
   td {
